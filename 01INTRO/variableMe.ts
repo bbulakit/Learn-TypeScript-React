@@ -20,5 +20,6 @@ unknownHero = getHeo();
 console.log(`${typeof unknownHero} ${unknownHero}`)
 
 
-export{}; //this will create .js file with the same name after using command 'tsc {.ts file}'
+export{}; 
+//this will create Object.defineProperty ..... in .js file with the same name after using command 'tsc {.ts file}'
 //as typepiled (compiled TS to JS)

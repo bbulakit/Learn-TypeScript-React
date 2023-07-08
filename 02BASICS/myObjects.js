@@ -28,6 +28,12 @@ var myStudent = {
     _id: "1",
     name: "Bulakit",
     email: "myemail@email.com",
-    isActive: true
+    isActive: true,
+    credCardDetails: {
+        cardNumber: "1234567890123456",
+        // cardType: "visa",  ? = same in C# or VB that mean Nullable ?
+        cardDate: "12/12/2020",
+        cvv: 123
+    }
 };
 myStudent.email = "myStudent@email.com";

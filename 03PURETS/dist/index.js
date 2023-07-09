@@ -58,3 +58,14 @@ class User3 {
         this._courseCount = count;
     }
 }
+class SubUser extends User3 {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount(newCount) {
+        //_courseCount will be inaccessible if _courseCount in User3 is private 
+        //so, changed it to be protected instead
+        this._courseCount = newCount;
+    }
+}

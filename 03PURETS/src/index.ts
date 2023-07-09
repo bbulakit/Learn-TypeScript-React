@@ -31,7 +31,7 @@ const user2 = new User2("user2@user.com", "user2zz")
 
 //getter - stter
 class User3{
-    private _courseCount = 69;
+    protected _courseCount = 69;
     constructor(
         private email:string, 
         private name:string
@@ -72,5 +72,14 @@ class User3{
             throw new Error("Count must greater than 0");            
         }
         this._courseCount = count;
+    }
+}
+
+class SubUser extends User3{
+    isFamily:boolean = true;
+    changeCourseCount(newCount:number){
+        //_courseCount will be inaccessible if _courseCount in User3 is private 
+        //so, changed it to be protected instead
+        this._courseCount = newCount;
     }
 }

@@ -28,3 +28,49 @@ class User2{
 }
 
 const user2 = new User2("user2@user.com", "user2zz")
+
+//getter - stter
+class User3{
+    private _courseCount = 69;
+    constructor(
+        private email:string, 
+        private name:string
+        ){
+        this.email = email;
+        this.name = name;       
+    }
+
+    //private (inaccessible from outside)
+    private deleteToken(){
+        console.log("Token deleted");
+    }
+
+    //getter
+    get GetAppleEmail():string{
+        return `apple_${this.email}`;    
+    }
+
+    get GetOrangeName():string{
+        return `${this.name}_orange`;
+    }       
+
+    get courseCount():number{
+        return this._courseCount;
+    }
+    
+    //setter    
+    set SetNewEmail(email:string){
+        this.email = email;
+    }
+
+    set SetNewName(name:string){
+        this.name = name;
+    }
+
+    set courseCount(count:number){
+        if(count <= 0){
+            throw new Error("Count must greater than 0");            
+        }
+        this._courseCount = count;
+    }
+}

@@ -1,0 +1,6 @@
+1.npx create-react-app typescript-tutorial --tempalte typescript
+    typescript-tutorial directory will be created with package.json inside
+
+2.cd typescript-tutorial
+
+3.npm start

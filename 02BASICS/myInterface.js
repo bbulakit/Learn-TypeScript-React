@@ -6,3 +6,10 @@ var testUser = { dbId: 21, email: "testUser@gmail.com", userId: 213,
     getCoupon: function (name, off) { return 1; } // Soln.A
     // getCoupon:(name: string = "Free Lunch", off:number =10) => {return 1} //Soln.B
 };
+//Admin = extended User
+var testAdmin = { dbId: 21, email: "testUser@gmail.com", userId: 213,
+    startTrail: function () { return "Trail Started"; },
+    //2ways declarations
+    getCoupon: function (name, off) { return 1; },
+    // getCoupon:(name: string = "Free Lunch", off:number =10) => {return 1} //Soln.B
+    role: "admin" };

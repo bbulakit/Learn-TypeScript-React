@@ -83,3 +83,5 @@ class SubUser extends User3{
         this._courseCount = newCount;
     }
 }
+
+export{}

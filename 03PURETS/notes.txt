@@ -35,3 +35,7 @@ Procedure
 12.do something in index.ts for testing that lite-serevr is working properly
     12.1 Console.log("TypeScript is here")
     12.2 Browser'console would show a message "TypeScript is here" suddenly
+
+
+
+https://www.typescriptlang.org/docs/handbook/2/narrowing.html

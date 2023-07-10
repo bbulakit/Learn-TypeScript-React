@@ -1,4 +1,32 @@
-#root {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcd83;
+  font-family: 'Josefin Sans', "san";
+}
+
+.heading{
+  text-transform: uppercase;
+  font-size: 56px;
+  margin: 30px 0;
+  color: rgb(141, 97, 3);
+  z-index: 1;
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  .heading{
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +67,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
